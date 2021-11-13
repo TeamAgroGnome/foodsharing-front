@@ -87,30 +87,56 @@ ul {
             <li><a class="header" href="foodsharing.html">Главная</a></li>
             <li><a class="header" href="main.html">Выход</a></li>
         </ul>
-        <table>
-          <tr>
-            <td>1</td>
-            <td>1</td>
-            <td>1</td>
-          </tr>
-          <tr>
-            <td>1</td>
-            <td>1</td>
-            <td>1</td>
-          </tr>
-          <tr>
-            <td>1</td>
-            <td>1</td>
-            <td>1</td>
-          </tr>
-        </table>
-        <script>
-          var tds = document.querySelectorAll('td');
 
-          for(var i=0;i<tds.length;i++){
-            tds[i].addEventListener('')
+        <style>
+          td{
+            padding: 36px;
+            border: 1px solid black;
           }
-        </script>
+        </style>
+
+    <script type="text/javascript">
+      var x;
+      x=1;
+      function addRow(id){
+          var tbody = document.getElementById(id).getElementsByTagName("TBODY")[0];
+          var row = document.createElement("TR")
+          var td1 = document.createElement("TD")
+          td1.appendChild(document.createTextNode(x))
+          x++;
+          var td2 = document.createElement("TD")
+          td2.appendChild (document.createTextNode("column 2"))
+          row.appendChild(td1);
+          row.appendChild(td2);
+          var td3 = document.createElement("TD")
+          td3.appendChild(document.createTextNode("column 3"))
+          var td4 = document.createElement("TD")
+          td4.appendChild (document.createTextNode("column 4"))
+          row.appendChild(td3);
+          row.appendChild(td4);
+          var td5 = document.createElement("TD")
+          td5.appendChild(document.createTextNode("column 3"))
+          var td6 = document.createElement("TD")
+          td6.appendChild (document.createTextNode("column 4"))
+          row.appendChild(td5);
+          row.appendChild(td6);
+          tbody.appendChild(row);
+        }
+    </script>
+    
+    <h1 > Информация о счете фактуры 1 магазина: </h1>
+    <center>
+    <p>Заполнети информацию о продуктах,которые вы получили:</p>
+
+    <table id="myTable" cellspacing="0" border="">
+        <tr>
+          <td>Номер товара</td><td>Наименование продовольственного товара</td><td>Количество</td><td>Стоимость шт/руб</td><td>Срок годности</td><td>Срок годности</td>
+        </tr>
+  </table>
+  <a href="javascript://" onclick="addRow('myTable');return false;">Добавить позициию</a>
+
+
+
         
     </body>
 </html>
