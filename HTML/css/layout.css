@@ -496,6 +496,13 @@ fieldset[disabled] .btn-theme {
   transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1);
 }
 
+/* Volounter info */
+.volonter
+{
+  width
+}
+
+
 /* Media Queries below 991px */
 @media (max-width: 991px) {
   /* Bootstrap collapse of navigation with a maximum width: 991px
