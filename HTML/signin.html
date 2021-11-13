@@ -116,23 +116,49 @@
 
   <div style="max-width: 500px; margin-left: auto; margin-right: auto; padding: 15px;">
 
-    <h1>Добро пожаловать в личный кабинет волонтеров компании Фудшеринг</h1>
-    <p>Авторизуйтесь на данной платформе</p>
+    <h1>Добро пожаловать в систему Фудшеринг</h1>
+    <p>Введите требуемые данные</p>
     <div class="text-field">
       <label class="text-field__label" for="login"></label>
-      <input class="text-field__input" type="text" name="login" id="login" placeholder="Логин" value="">
+      <input class="text-field__input" type="text" name="login" id="login" placeholder="Фамилия" value="">
     </div>
+
+    <div class="text-field">
+        <label class="text-field__label" for="text"></label>
+        <input class="text-field__input" type="text" name="text" id="text" placeholder="Имя" value="">
+      </div>
+
+      <div class="text-field">
+        <label class="text-field__label" for="text"></label>
+        <input class="text-field__input" type="text" name="text" id="text" placeholder="Отчество" value="">
+      </div>
+
+      <div class="text-field">
+        <label class="text-field__label" for="text"></label>
+        <input class="text-field__input" type="text" name="text" id="text" placeholder="E-mail" value="">
+      </div>
+
+    
+        <p>
+            <label for="date">Дата рождения: </label>
+            <input type="date" id="date" name="date"/>
+        </p>
+
     <div class="text-field">
       <label class="text-field__label" for="username"></label>
       <input class="text-field__input" type="password" name="password" id="password" placeholder="Пароль">
     </div>
+
+    <div class="text-field">
+        <label class="text-field__label" for="username"></label>
+        <input class="text-field__input" type="password" name="password" id="password" placeholder="Повторите пароль">
+      </div>
+
   <script>
     document.querySelector('#email').focus();
   </script>
 
-  <a href="kabinet.html"><div class="button button1">Войти</div></a>
-  <a href="passvos.html" class="forgpass">Забыли пароль?</a>
-  <a href="signin.html" class="signin">Регистрация</a>
+  <a href="kabinet.html"><div class="button button1">Создать аккаунт</div></a>
   </div>
   
 
