@@ -69,11 +69,50 @@ ul {
     transition: .5s linear;
     color: #FFFCF9;
 }
+
+table {
+font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+font-size: 14px;
+border-collapse: collapse;
+text-align: center;
+}
+th, td:first-child {
+background: #D8E6F3;
+color: black;
+padding: 10px 20px;
+}
+th, td {
+border-style: solid;
+border-width: 0 1px 1px 0;
+border-color: white;
+}
+td {
+background: #D8E6F3;
+}
+th:first-child, td:first-child {
+text-align: left;
+}
+
 .header1{
   padding: 1em;
   background: #212529;
   border-right: 1px solid #212529;
   color: #FF6978; }
+  .ghg {
+    text-align: center;
+    font-size: 25px;
+  }
+ 
+
+  details summary {
+  display: block;  /* у summary по умолчанию свойство display в значении list-item, потому поддерживается свойство list-style */
+} 
+.gh {
+    text-align: center;
+  }
+details summary::-webkit-details-marker {  /* нестандартный псевдоэлемент Google Chrome */
+  display: none;
+}
         </style>
     </head>
 
@@ -87,7 +126,22 @@ ul {
             <li><a class="header" href="main.html">Выход</a></li>
         </ul>
 
+  <!-- <div style="max-width: 500px; margin-left: auto; margin-right: auto; padding: 15px;">
+      
+    <details>
+      <summary>Открыть</summary>
+      <table >
+        <tr><td> Дата и время</td><td> Название магазина </td><td> Таблица чего-то там </td><td> Файл </td></tr>
+      </table>
+    </details>
 
-        
+   </div> -->
+
+   <details>
+     <summary class="ghg">Открыть таблицу</summary>
+    <table>
+      <tr><td style="padding-right: 44px;" class="gh"> Дата и время</td><td style="padding-right: 200px;" class="gh"> Название магазина </td><td style="padding-right: 700px;" class="gh"> Таблица чего-то там </td><td style="padding-right: 540px;" class="gh"> Файл </td></tr>
+    </table>
+  </details>
     </body>
 </html>
