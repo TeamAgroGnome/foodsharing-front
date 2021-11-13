@@ -74,6 +74,21 @@ ul {
   background: #212529;
   border-right: 1px solid #212529;
   color: #FF6978; }
+
+  .example-2 .btn-tertiary{color:#555;padding:0;line-height:40px;width:300px;margin:auto;display:block;border:2px solid #555}
+.example-2 .btn-tertiary:hover,.example-2 .btn-tertiary:focus{color:#888;border-color:#888}
+.example-2 .input-file{width:.1px;height:.1px;opacity:0;overflow:hidden;position:absolute;z-index:-1}
+.example-2 .input-file + .js-labelFile{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;padding:0 10px;cursor:pointer}
+.example-2 .input-file + .js-labelFile .icon:before{content:"\f093"}
+.example-2 .input-file + .js-labelFile.has-file .icon:before{content:"\f00c";color:#5AAC7B}
+.example-2 {
+  padding:15px;
+  margin-right:1700px;
+}
+
+.txt {
+  border-right-width: 0px;border-right-style: solid;border-left-style: solid;border-top-style: solid;margin-right: 1430px;border-top-width: 0px;border-left-width: 0px;
+}
         </style>
     </head>
 
@@ -81,11 +96,12 @@ ul {
 
     <body>
         <ul class="one">
-            <li ><a class="button2" href="kabinet.html">Отмена</a></li>
+            <li ><a class="header" href="kabinet.html">Профиль</a></li>
             <li><a class="header" href="raspisanie.html">Расписание</a></li>
             <li><a class="header" href="istoria.html">История</a></li>
             <li><a class="header" href="foodsharing.html">Главная</a></li>
             <li><a class="header" href="main.html">Выход</a></li>
+            
         </ul>
 
         <style>
@@ -138,5 +154,19 @@ ul {
 
 
         
+<div class="txt">Прикрепите фотографию документа, подтверждающего получение товаров из магазина</div>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"> 
+<div class="example-2">
+  <div class="form-group">
+    <input type="file" name="file" id="file" class="input-file">
+    <label for="file" class="btn btn-tertiary js-labelFile">
+      <i class="icon fa fa-check"></i>
+      <span class="js-fileName">Загрузить файл</span>
+    </label>
+  </div>
+ </div>
+
+
+
     </body>
 </html>
